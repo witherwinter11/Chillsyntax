@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalmCode Inspired Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">ChillSyntax</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Get in touch</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div id="particles-js"></div>
+    <h1>Welcome to Little Code Journey</h1>
+    <p>Slowly building, deeply learning - A calm way to code and reflect</p>
+  </header>
+
+  <div class="container">
+    <h2>Latest Blog Posts</h2>
+    <div id="blogPosts"></div>
+    
+  </div>
+  <footer class="footer" id="contact">
+    <p>&copy; 2025 ChillSyntax. Calm minds, clean code.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <!-- Particle Script-->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!--Blog CMS Script-->
+  <script src="blog.js"></script>
+<!--Creates the particles-->
+  <script>
+    particlesJS("particles-js", {
+  particles: {
+    number: { value: 120, density: { enable: true, value_area: 800 }},
+    color: { value: ["#ffffff", "#a8d8ff", "#cce6ff"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.9, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.3, sync: false } },
+    size: { value: 4, random: true },
+    move: { enable: true, speed: 1, direction: "bottom", out_mode: "out" },
+    line_linked: { enable: false }
+  },
+  interactivity: { events: { onhover: { enable: false }, onclick: { enable: false } } },
+  retina_detect: true
+});
+  </script>
+</body>
+</html>
